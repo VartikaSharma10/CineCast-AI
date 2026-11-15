@@ -1,0 +1,355 @@
+/* CineCast AI - High-Contrast Luxury Cinema Enterprise Design System */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+/* Global Reset & Base */
+html, body, [class*="css"] {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #172321;
+}
+
+.stApp {
+    background-color: #F5F3ED !important;
+}
+
+/* Main Container Spacing */
+.block-container {
+    padding-top: 1.8rem !important;
+    padding-bottom: 3rem !important;
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+    max-width: 1400px;
+}
+
+/* ----------------- SIDEBAR STYLING (HIGH CONTRAST) ----------------- */
+section[data-testid="stSidebar"] {
+    background-color: #172321 !important;
+    border-right: 1px solid #283C37;
+}
+
+/* Sidebar Headings & Static Markdown */
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    color: #FFFFFF !important;
+    font-weight: 700;
+}
+
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] span,
+section[data-testid="stSidebar"] div.stMarkdown {
+    color: #E2EAE7;
+}
+
+/* Sidebar Form Labels */
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] .stWidgetLabel p {
+    color: #E8D5B5 !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    letter-spacing: 0.04em !important;
+    text-transform: uppercase !important;
+}
+
+/* Sidebar Navigation Items */
+[data-testid="stSidebarNav"] {
+    padding-top: 0.8rem;
+}
+
+[data-testid="stSidebarNav"] a span {
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    color: #E2EAE7 !important;
+}
+
+[data-testid="stSidebarNav"] a[aria-current="page"] {
+    background-color: rgba(182, 154, 104, 0.18) !important;
+    border-left: 3px solid #DFCDB0 !important;
+}
+
+[data-testid="stSidebarNav"] a[aria-current="page"] span {
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
+}
+
+/* Sidebar Input Elements (Selectbox, MultiSelect, Date Input) */
+section[data-testid="stSidebar"] div[data-baseweb="select"] > div {
+    background-color: #21332F !important;
+    border: 1px solid #3B534E !important;
+    border-radius: 6px !important;
+    color: #FFFFFF !important;
+}
+
+section[data-testid="stSidebar"] div[data-baseweb="select"] input {
+    color: #FFFFFF !important;
+}
+
+section[data-testid="stSidebar"] div[data-baseweb="select"] span {
+    color: #FFFFFF !important;
+}
+
+section[data-testid="stSidebar"] div[data-baseweb="select"] svg {
+    fill: #DFCDB0 !important;
+}
+
+/* Sidebar MultiSelect Tag Chips */
+section[data-testid="stSidebar"] span[data-baseweb="tag"] {
+    background-color: #2E4B42 !important;
+    border: 1px solid #486E63 !important;
+    border-radius: 4px !important;
+}
+
+section[data-testid="stSidebar"] span[data-baseweb="tag"] span {
+    color: #F5F3ED !important;
+    font-weight: 600 !important;
+}
+
+section[data-testid="stSidebar"] span[data-baseweb="tag"] svg {
+    fill: #DFCDB0 !important;
+}
+
+/* Sidebar Date Picker Input */
+section[data-testid="stSidebar"] div[data-baseweb="input"] input {
+    background-color: #21332F !important;
+    border: 1px solid #3B534E !important;
+    color: #FFFFFF !important;
+    border-radius: 6px !important;
+}
+
+/* ----------------- GLOBAL POPOVER & DROPDOWN MENUS ----------------- */
+div[data-baseweb="popover"],
+div[data-baseweb="popover"] ul,
+div[data-baseweb="menu"],
+ul[role="listbox"] {
+    background-color: #FFFFFF !important;
+    border: 1px solid #D5CEBF !important;
+    box-shadow: 0 8px 24px rgba(23, 35, 33, 0.15) !important;
+    border-radius: 6px !important;
+}
+
+div[data-baseweb="popover"] li,
+ul[role="listbox"] li,
+div[role="option"] {
+    color: #172321 !important;
+    font-weight: 500 !important;
+    background-color: #FFFFFF !important;
+}
+
+div[data-baseweb="popover"] li:hover,
+ul[role="listbox"] li:hover,
+div[role="option"]:hover,
+div[role="option"][aria-selected="true"] {
+    background-color: #F2EFE8 !important;
+    color: #172321 !important;
+    font-weight: 600 !important;
+}
+
+/* ----------------- CARD STYLING ----------------- */
+.cinema-card {
+    background-color: #FFFFFF;
+    border: 1px solid #DDD6C7;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(23, 35, 33, 0.04);
+    margin-bottom: 1.25rem;
+    color: #172321;
+}
+
+.cinema-card-gold {
+    background-color: #FFFFFF;
+    border-left: 4px solid #8C6B2B;
+    border-top: 1px solid #DDD6C7;
+    border-right: 1px solid #DDD6C7;
+    border-bottom: 1px solid #DDD6C7;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(140, 107, 43, 0.08);
+    margin-bottom: 1.25rem;
+    color: #172321;
+}
+
+.cinema-card-forest {
+    background-color: #172321;
+    color: #FFFFFF !important;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 14px rgba(23, 35, 33, 0.12);
+    margin-bottom: 1.25rem;
+}
+
+.cinema-card-forest * {
+    color: #FFFFFF !important;
+}
+
+/* ----------------- KPI METRIC CARDS ----------------- */
+.kpi-container {
+    background-color: #FFFFFF;
+    border: 1px solid #DDD6C7;
+    border-radius: 8px;
+    padding: 1.2rem 1.4rem;
+    box-shadow: 0 2px 6px rgba(23, 35, 33, 0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 112px;
+}
+
+.kpi-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #384A45;
+    margin-bottom: 0.4rem;
+}
+
+.kpi-value {
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: #172321;
+    line-height: 1.1;
+}
+
+.kpi-value-gold {
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: #7A5722; /* High-contrast rich bronze gold */
+    line-height: 1.1;
+}
+
+.kpi-subtext {
+    font-size: 0.76rem;
+    color: #1E4D3E; /* High-contrast readable forest green */
+    margin-top: 0.4rem;
+    font-weight: 600;
+}
+
+/* ----------------- HEADER & TYPOGRAPHY ----------------- */
+h1, h2, h3 {
+    color: #172321 !important;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.page-title {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #172321;
+    margin-bottom: 0.2rem;
+}
+
+.page-subtitle {
+    font-size: 0.98rem;
+    color: #23493E; /* High contrast deep sage/forest */
+    margin-bottom: 1.8rem;
+    font-weight: 600;
+}
+
+/* ----------------- BADGES (HIGH CONTRAST) ----------------- */
+.badge-gold {
+    background-color: #F5EEDB;
+    color: #6E4D1A;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.65rem;
+    border-radius: 4px;
+    display: inline-block;
+    border: 1px solid #D8C39C;
+    letter-spacing: 0.02em;
+}
+
+.badge-sage {
+    background-color: #E2ECE8;
+    color: #1A4B3C;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.65rem;
+    border-radius: 4px;
+    display: inline-block;
+    border: 1px solid #AFD0C4;
+    letter-spacing: 0.02em;
+}
+
+.badge-forest {
+    background-color: #172321;
+    color: #FFFFFF;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.65rem;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.badge-urgent {
+    background-color: #FDE8E8;
+    color: #8A1F1F;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.65rem;
+    border-radius: 4px;
+    display: inline-block;
+    border: 1px solid #F0AFAF;
+}
+
+/* ----------------- BUTTONS ----------------- */
+.stButton > button {
+    background-color: #172321 !important;
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+    border: 1px solid #172321 !important;
+    border-radius: 6px !important;
+    padding: 0.6rem 1.4rem !important;
+    letter-spacing: 0.02em !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 2px 6px rgba(23, 35, 33, 0.1) !important;
+}
+
+.stButton > button:hover {
+    background-color: #243834 !important;
+    border-color: #8C6B2B !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 4px 10px rgba(140, 107, 43, 0.2) !important;
+}
+
+/* Main Area Form Inputs */
+input, select, textarea {
+    border-radius: 6px !important;
+    border: 1px solid #D0C8B8 !important;
+    background-color: #FFFFFF !important;
+    color: #172321 !important;
+    font-weight: 500 !important;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+    border-bottom: 1px solid #DDD6C7;
+}
+
+.stTabs [data-baseweb="tab"] {
+    padding: 8px 16px;
+    font-weight: 600;
+    color: #384C46;
+    background-color: transparent;
+    border-radius: 4px 4px 0 0;
+}
+
+.stTabs [aria-selected="true"] {
+    color: #172321 !important;
+    border-bottom: 3px solid #7A5722 !important;
+    background-color: rgba(182, 154, 104, 0.12) !important;
+}
+
+/* Dataframe containers */
+div[data-testid="stDataFrame"] {
+    border: 1px solid #DDD6C7;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+/* Clean Gold Divider */
+.gold-divider {
+    height: 1px;
+    background: linear-gradient(90deg, #8C6B2B 0%, rgba(140, 107, 43, 0.1) 100%);
+    margin: 1.5rem 0;
+}

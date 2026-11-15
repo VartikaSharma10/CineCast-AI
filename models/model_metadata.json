@@ -1,0 +1,93 @@
+{
+    "best_model_name": "Gradient Boosting Regressor",
+    "metrics": {
+        "Baseline (Median)": {
+            "MAE": 48.22,
+            "RMSE": 65.72,
+            "R2": 0.1627
+        },
+        "Random Forest Regressor": {
+            "MAE": 17.53,
+            "RMSE": 25.17,
+            "R2": 0.8771
+        },
+        "Gradient Boosting Regressor": {
+            "MAE": 14.94,
+            "RMSE": 20.62,
+            "R2": 0.9176
+        }
+    },
+    "champion_metrics": {
+        "MAE": 14.94,
+        "RMSE": 20.62,
+        "R2": 0.9176
+    },
+    "feature_names": [
+        "ticket_price",
+        "theatre_capacity",
+        "advance_bookings",
+        "movie_rating",
+        "days_since_release",
+        "is_weekend",
+        "is_holiday",
+        "day_of_week",
+        "month",
+        "show_hour",
+        "is_peak_showtime",
+        "advance_booking_ratio",
+        "price_per_rating",
+        "theatre_historical_occ",
+        "genre_Action",
+        "genre_Animation",
+        "genre_Comedy",
+        "genre_Drama",
+        "genre_Horror",
+        "genre_Romance",
+        "genre_Sci-Fi",
+        "genre_Thriller",
+        "theatre_name_Apex Luxe Multiplex - Screen 4",
+        "theatre_name_Apex Luxe Multiplex - Screen VIP",
+        "theatre_name_CineOasis Premiere - Hall Gold",
+        "theatre_name_Grand Regal Cinema - Screen 1 (IMAX)",
+        "theatre_name_Grand Regal Cinema - Screen 2",
+        "theatre_name_Starlight Dome - Grand Auditorium",
+        "theatre_name_Velvet Screen Studios - Studio A",
+        "show_time_10:00",
+        "show_time_13:30",
+        "show_time_17:00",
+        "show_time_20:30",
+        "show_time_23:15",
+        "release_stage_Early_Run",
+        "release_stage_Late_Run",
+        "release_stage_Mid_Run",
+        "release_stage_Opening_Weekend"
+    ],
+    "top_feature_importances": {
+        "advance_bookings": 0.7644,
+        "days_since_release": 0.045,
+        "theatre_capacity": 0.0428,
+        "is_peak_showtime": 0.0287,
+        "ticket_price": 0.0186,
+        "advance_booking_ratio": 0.013,
+        "show_time_20:30": 0.0125,
+        "price_per_rating": 0.0105,
+        "day_of_week": 0.0101,
+        "theatre_historical_occ": 0.0094,
+        "is_weekend": 0.0077,
+        "movie_rating": 0.0043,
+        "is_holiday": 0.0039,
+        "genre_Comedy": 0.0031,
+        "show_hour": 0.0031
+    },
+    "train_date_range": [
+        "2025-01-01",
+        "2025-12-13"
+    ],
+    "test_date_range": [
+        "2025-12-13",
+        "2026-03-15"
+    ],
+    "train_records": 5200,
+    "test_records": 1300,
+    "trained_at": "2026-11-15T14:45:49.218501"
+}
